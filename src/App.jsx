@@ -433,7 +433,7 @@ export default function MadeiraFieldOfDreams() {
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: 500, margin: "1.5rem auto 0" }}>
               {[
                 { name: "Travis Beck", email: "travisbeck8@gmail.com" },
-                { name: "Dave Hyland", email: "hylandd@xavier.edu" },
+                { name: "Dave Hyland", email: "dave_hyland@yahoo.com", phone: "(513) 600-1024" },
                 { name: "Jennifer Cissell", email: "daxandjen@msn.com" },
               ].map((member, i) => (
                 <div key={i} style={{
@@ -442,7 +442,10 @@ export default function MadeiraFieldOfDreams() {
                   borderRadius: 6, padding: "1rem 1.4rem",
                 }}>
                   <span style={{ fontFamily: "var(--fd)", fontWeight: 700, fontSize: "1.05rem", color: "#fff" }}>{member.name}</span>
-                  <a href={"mailto:" + member.email} style={{ color: "#D4A843", fontSize: "0.85rem", textDecoration: "none" }}>{member.email}</a>
+                  <div style={{ textAlign: "right" }}>
+                    <a href={"mailto:" + member.email} style={{ color: "#D4A843", fontSize: "0.85rem", textDecoration: "none", display: "block" }}>{member.email}</a>
+                    {member.phone && <a href={"tel:" + member.phone.replace(/[^0-9+]/g, "")} style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.82rem", textDecoration: "none" }}>{member.phone}</a>}
+                  </div>
                 </div>
               ))}
             </div>
@@ -470,7 +473,7 @@ export default function MadeiraFieldOfDreams() {
               <Mail size={20} color="#B8922E" style={{ marginTop: 2, flexShrink: 0 }} />
               <div>
                 <strong style={{ color: "#1B2A4A", fontSize: "0.9rem", display: "block" }}>Email</strong>
-                <span style={{ color: "#666", fontSize: "0.9rem" }}>hylandd@xavier.edu</span>
+                <span style={{ color: "#666", fontSize: "0.9rem" }}>dave_hyland@yahoo.com</span>
               </div>
             </div>
           </Reveal>
