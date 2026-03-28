@@ -141,7 +141,19 @@ export default function MadeiraFieldOfDreams() {
       alert("Please fill in all required fields with valid information.");
       return;
     }
-    setFormSent(true);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        "form-name": "contact",
+        name: name.trim(),
+        email: email.trim(),
+        subject: formState.subject,
+        message: message.trim(),
+      }).toString(),
+    })
+      .then(() => setFormSent(true))
+      .catch(() => alert("Something went wrong. Please try again."));
   };
 
   return (
