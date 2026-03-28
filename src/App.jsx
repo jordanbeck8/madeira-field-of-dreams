@@ -247,7 +247,20 @@ export default function MadeiraFieldOfDreams() {
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <div style={{ textAlign: "center", marginTop: "2.5rem" }}><div style={{ fontFamily: "var(--fd)", fontWeight: 900, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1, color: "#1B2A4A", marginBottom: "0.5rem" }}>$500,000</div><div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#B8922E", marginBottom: "1.5rem" }}>Our Fundraising Target</div>
+            <div style={{ background: "rgba(184,146,46,0.1)", border: "1px solid rgba(184,146,46,0.3)", borderRadius: 8, padding: "1.5rem", marginTop: "2rem", marginBottom: "2rem" }}>
+              <p style={{ color: "#1B2A4A", fontWeight: 700, fontSize: "0.95rem", marginBottom: "0.75rem" }}>How to Donate</p>
+              <p style={{ color: "#1B2A4A", fontWeight: 600, fontSize: "0.9rem", marginBottom: "0.5rem" }}>Donate Online</p>
+              <ol style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.8, paddingLeft: "1.2rem", margin: 0 }}>
+                <li>Click the <strong style={{ color: "#1B2A4A" }}>Support the Project</strong> button below</li>
+                <li>You will be taken to the <strong style={{ color: "#1B2A4A" }}>Madeira Schools Foundation</strong> website</li>
+                <li>On the right side of the home page, click <strong style={{ color: "#1B2A4A" }}>Donate Today</strong></li>
+                <li>Select <strong style={{ color: "#1B2A4A" }}>Madeira Baseball Project</strong> from the dropdown to designate your funds</li>
+                <li>Follow the prompts to complete your gift</li>
+              </ol>
+              <p style={{ color: "#1B2A4A", fontWeight: 600, fontSize: "0.9rem", marginTop: "1rem", marginBottom: "0.4rem" }}>Donate by Check</p>
+              <p style={{ color: "#777", fontSize: "0.85rem", margin: 0 }}>Make checks payable to <strong style={{ color: "#555" }}>Madeira Schools Foundation</strong> with "Madeira Baseball Project" in the memo line. Mail to: Madeira Board of Education, 7465 Loannes Dr, Cincinnati, OH 45243.</p>
+            </div>
+            <div style={{ textAlign: "center", marginTop: "1.5rem" }}><div style={{ fontFamily: "var(--fd)", fontWeight: 900, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1, color: "#1B2A4A", marginBottom: "0.5rem" }}>$500,000</div><div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#B8922E", marginBottom: "1.5rem" }}>Our Fundraising Target</div>
               <DonateButton />
             </div>
           </Reveal>
