@@ -337,9 +337,24 @@ export default function MadeiraFieldOfDreams() {
           <Reveal>
             <SectionLabel light>How You Can Help</SectionLabel>
             <SectionHeading light>Family-Friendly <em style={{ color: "#D4A843", fontStyle: "italic" }}>Giving Ladder</em></SectionHeading>
-            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.95rem", marginBottom: "2.5rem" }}>
+            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.95rem", marginBottom: "1.2rem" }}>
               Giving levels are suggested, not required. Every gift matters.
             </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div style={{ background: "rgba(212,168,67,0.1)", border: "1px solid rgba(212,168,67,0.25)", borderRadius: 8, padding: "1.5rem", marginBottom: "2rem", maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
+              <p style={{ color: "#D4A843", fontWeight: 700, fontSize: "0.95rem", marginBottom: "0.75rem" }}>How to Donate</p>
+              <p style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600, fontSize: "0.9rem", marginBottom: "0.5rem" }}>Donate Online</p>
+              <ol style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem", lineHeight: 1.8, paddingLeft: "1.2rem", margin: 0 }}>
+                <li>Click any <strong style={{ color: "#D4A843" }}>Donate</strong> or <strong style={{ color: "#D4A843" }}>Support the Project</strong> button on this page</li>
+                <li>You will be taken to the <strong style={{ color: "#fff" }}>Madeira Schools Foundation</strong> website</li>
+                <li>On the right side of the home page, click <strong style={{ color: "#fff" }}>Donate Today</strong></li>
+                <li>Select <strong style={{ color: "#fff" }}>Madeira Baseball Project</strong> from the dropdown to designate your funds</li>
+                <li>Follow the prompts to complete your gift</li>
+              </ol>
+              <p style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600, fontSize: "0.9rem", marginTop: "1rem", marginBottom: "0.4rem" }}>Donate by Check</p>
+              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.85rem", margin: 0 }}>Make checks payable to <strong style={{ color: "rgba(255,255,255,0.7)" }}>Madeira Schools Foundation</strong> with "Madeira Baseball Project" in the memo line. Mail to: Madeira Board of Education, 7465 Loannes Dr, Cincinnati, OH 45243.</p>
+            </div>
           </Reveal>
           <div style={{ maxWidth: 700, margin: "0 auto", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {TIERS.map((tier, i) => {
