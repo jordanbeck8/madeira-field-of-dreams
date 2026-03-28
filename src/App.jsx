@@ -424,6 +424,32 @@ export default function MadeiraFieldOfDreams() {
         </div>
       )}
 
+      {/* STEERING COMMITTEE */}
+      <section style={{ background: "#1B2A4A", padding: "4rem 1.5rem", textAlign: "center" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <Reveal>
+            <SectionLabel light>Leadership</SectionLabel>
+            <SectionHeading light>Field of Dreams <em style={{ color: "#D4A843", fontStyle: "italic" }}>Steering Committee</em></SectionHeading>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: 500, margin: "1.5rem auto 0" }}>
+              {[
+                { name: "Travis Beck", email: "travisbeck8@gmail.com" },
+                { name: "Dave Hyland", email: "hylandd@xavier.edu" },
+                { name: "Jennifer Cissell", email: "daxandjen@msn.com" },
+              ].map((member, i) => (
+                <div key={i} style={{
+                  display: "flex", alignItems: "center", justifyContent: "space-between",
+                  background: "rgba(255,255,255,0.04)", border: "1px solid rgba(212,168,67,0.15)",
+                  borderRadius: 6, padding: "1rem 1.4rem",
+                }}>
+                  <span style={{ fontFamily: "var(--fd)", fontWeight: 700, fontSize: "1.05rem", color: "#fff" }}>{member.name}</span>
+                  <a href={"mailto:" + member.email} style={{ color: "#D4A843", fontSize: "0.85rem", textDecoration: "none" }}>{member.email}</a>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" style={{ background: "#FAFAFA", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))", gap: "3rem" }}>
@@ -431,7 +457,7 @@ export default function MadeiraFieldOfDreams() {
             <SectionLabel>Get in Touch</SectionLabel>
             <SectionHeading>Contact <em style={{ color: "#B8922E", fontStyle: "italic" }}>Us</em></SectionHeading>
             <p style={{ color: "#555", marginBottom: "2rem", fontSize: "1rem", lineHeight: 1.7 }}>
-              Have questions about the project, donation opportunities, or want to get involved? We'd love to hear from you.
+              Have questions or inquiries about the project? Reach out to Dave Hyland and we'll get back to you.
             </p>
             <div style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start", marginBottom: "1.5rem" }}>
               <MapPin size={20} color="#B8922E" style={{ marginTop: 2, flexShrink: 0 }} />
@@ -444,7 +470,7 @@ export default function MadeiraFieldOfDreams() {
               <Mail size={20} color="#B8922E" style={{ marginTop: 2, flexShrink: 0 }} />
               <div>
                 <strong style={{ color: "#1B2A4A", fontSize: "0.9rem", display: "block" }}>Email</strong>
-                <span style={{ color: "#666", fontSize: "0.9rem" }}>admin@madeiraathleticbooster.com</span>
+                <span style={{ color: "#666", fontSize: "0.9rem" }}>hylandd@xavier.edu</span>
               </div>
             </div>
           </Reveal>
