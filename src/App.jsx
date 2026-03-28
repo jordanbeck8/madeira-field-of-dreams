@@ -97,7 +97,7 @@ function SectionHeading({ children, light }) {
 
 function DonateButton({ style = {} }) {
   return (
-    <a href="https://madeiraathleticbooster.com/" target="_blank" rel="noopener noreferrer" style={{
+    <a href="https://madeiraschoolsfoundation.org/index.php/ways-to-give/" target="_blank" rel="noopener noreferrer" style={{
       display: "inline-flex", alignItems: "center", gap: "0.5rem",
       background: "#D4A843", color: "#111D33", padding: "0.9rem 2.2rem",
       fontWeight: 700, fontSize: "0.9rem", textTransform: "uppercase",
@@ -190,7 +190,7 @@ export default function MadeiraFieldOfDreams() {
                 {item.label}
               </a>
             ))}
-            <a href="https://madeiraathleticbooster.com/" target="_blank" rel="noopener noreferrer" style={{
+            <a href="https://madeiraschoolsfoundation.org/index.php/ways-to-give/" target="_blank" rel="noopener noreferrer" style={{
               background: "#D4A843", color: "#111D33", padding: "0.5rem 1.3rem",
               fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase",
               letterSpacing: "0.06em", textDecoration: "none", borderRadius: 2,
@@ -223,7 +223,7 @@ export default function MadeiraFieldOfDreams() {
               fontFamily: "var(--fd)", fontWeight: 700, cursor: "pointer",
             }}>{item.label}</a>
           ))}
-          <a href="https://madeiraathleticbooster.com/" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://madeiraschoolsfoundation.org/index.php/ways-to-give/" target="_blank" rel="noopener noreferrer" style={{
             color: "#D4A843", fontSize: "1.4rem", fontFamily: "var(--fd)", fontWeight: 700, textDecoration: "none",
           }}>Donate</a>
         </div>
@@ -538,7 +538,7 @@ export default function MadeiraFieldOfDreams() {
             <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "2.5rem" }}>
               Madeira Baseball has always been powered by families who show up — early mornings, late nights, practices, games, and playoff runs. Whether your player is just beginning their journey or nearing graduation, your support helps ensure that future Mustangs compete in a facility that reflects the pride and excellence of our community.
             </p>
-            <a href="https://madeiraathleticbooster.com/" target="_blank" rel="noopener noreferrer" style={{
+            <a href="https://madeiraschoolsfoundation.org/index.php/ways-to-give/" target="_blank" rel="noopener noreferrer" style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
               background: "#D4A843", color: "#111D33", padding: "1rem 2.5rem",
               fontWeight: 700, fontSize: "0.9rem", textTransform: "uppercase",
