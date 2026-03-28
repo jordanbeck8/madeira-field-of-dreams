@@ -432,7 +432,7 @@ export default function MadeiraFieldOfDreams() {
               <Mail size={20} color="#B8922E" style={{ marginTop: 2, flexShrink: 0 }} />
               <div>
                 <strong style={{ color: "#1B2A4A", fontSize: "0.9rem", display: "block" }}>Email</strong>
-                <span style={{ color: "#666", fontSize: "0.9rem" }}>madeirafieldofdreams@gmail.com</span>
+                <span style={{ color: "#666", fontSize: "0.9rem" }}>jkimling@madeiracityschools.org</span>
               </div>
             </div>
           </Reveal>
