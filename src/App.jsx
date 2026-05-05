@@ -159,7 +159,7 @@ export default function MadeiraFieldOfDreams() {
   return (
     <div style={{ fontFamily: "var(--fb)", color: "#1a1a1a", background: "#FAFAFA", overflowX: "hidden" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+        /* Google Fonts @import removed — fonts self-hosted via @fontsource. See main.jsx. */
         :root { --fd: 'Playfair Display', Georgia, serif; --fb: 'DM Sans', -apple-system, sans-serif; }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; scroll-padding-top: 76px; }
@@ -460,9 +460,9 @@ export default function MadeiraFieldOfDreams() {
             <SectionHeading light>Field of Dreams <em style={{ color: "#D4A843", fontStyle: "italic" }}>Steering Committee</em></SectionHeading>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: 500, margin: "1.5rem auto 0" }}>
               {[
-                { name: "Travis Beck", email: "travisbeck8@gmail.com" },
-                { name: "Dave Hyland", email: "dave_hyland@yahoo.com", phone: "(513) 600-1024" },
-                { name: "Jennifer Cissell", email: "daxandjen@msn.com" },
+                { name: "Travis Beck" },
+                { name: "Dave Hyland" },
+                { name: "Jennifer Cissell" },
               ].map((member, i) => (
                 <div key={i} style={{
                   display: "flex", alignItems: "center", justifyContent: "space-between",
@@ -471,8 +471,7 @@ export default function MadeiraFieldOfDreams() {
                 }}>
                   <span style={{ fontFamily: "var(--fd)", fontWeight: 700, fontSize: "1.05rem", color: "#fff" }}>{member.name}</span>
                   <div style={{ textAlign: "right" }}>
-                    <a href={"mailto:" + member.email} style={{ color: "#D4A843", fontSize: "0.85rem", textDecoration: "none", display: "block" }}>{member.email}</a>
-                    {member.phone && <a href={"tel:" + member.phone.replace(/[^0-9+]/g, "")} style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.82rem", textDecoration: "none" }}>{member.phone}</a>}
+                    <a href="mailto:info@madeirafieldofdreams.org" style={{ color: "#D4A843", fontSize: "0.85rem", textDecoration: "none", display: "block" }}>info@madeirafieldofdreams.org</a>
                   </div>
                 </div>
               ))}
@@ -501,7 +500,7 @@ export default function MadeiraFieldOfDreams() {
               <Mail size={20} color="#B8922E" style={{ marginTop: 2, flexShrink: 0 }} />
               <div>
                 <strong style={{ color: "#1B2A4A", fontSize: "0.9rem", display: "block" }}>Email</strong>
-                <span style={{ color: "#666", fontSize: "0.9rem" }}>dave_hyland@yahoo.com</span>
+                <a href="mailto:info@madeirafieldofdreams.org" style={{ color: "#666", fontSize: "0.9rem" }}>info@madeirafieldofdreams.org</a>
               </div>
             </div>
           </Reveal>
